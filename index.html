@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Guia do Funil &amp; Fluxos · Trilha Performance Digital</title>
+<meta name="description" content="Como funciona o funil que trabalha seus leads no Kommo: as 10 etapas, o pré-atendimento, o follow-up e a nutrição, explicados para corretores e construtoras."/>
+<link rel="preconnect" href="https://static.wixstatic.com" crossorigin>
+<style>
+/* ───── POLYSANS · TRILHA · WIX CDN ───── */
+@font-face{
+  font-family:'PolySans Bulky Wide';font-style:normal;font-weight:800;font-display:swap;
+  src:url('https://static.wixstatic.com/ufonts/44f42e_6715ad510f8f4f6fa30541c6df9a03e7/woff2/file.woff2') format('woff2'),
+      url('https://static.wixstatic.com/ufonts/44f42e_6715ad510f8f4f6fa30541c6df9a03e7/woff/file.woff') format('woff')
+}
+@font-face{
+  font-family:'PolySans Bulky';font-style:normal;font-weight:700;font-display:swap;
+  src:url('https://static.wixstatic.com/ufonts/44f42e_808656c3944d427abd0adafe7597d810/woff2/file.woff2') format('woff2'),
+      url('https://static.wixstatic.com/ufonts/44f42e_808656c3944d427abd0adafe7597d810/woff/file.woff') format('woff')
+}
+@font-face{
+  font-family:'PolySans Median';font-style:normal;font-weight:500;font-display:swap;
+  src:url('https://static.wixstatic.com/ufonts/fb1953_158350b0513342cda7fc854a95b4e172/woff2/file.woff2') format('woff2'),
+      url('https://static.wixstatic.com/ufonts/fb1953_158350b0513342cda7fc854a95b4e172/woff/file.woff') format('woff')
+}
+@font-face{
+  font-family:'PolySans Slim';font-style:normal;font-weight:400;font-display:swap;
+  src:url('https://static.wixstatic.com/ufonts/fb1953_036c275183ca45bca9804e4e72fcf90f/woff2/file.woff2') format('woff2'),
+      url('https://static.wixstatic.com/ufonts/fb1953_036c275183ca45bca9804e4e72fcf90f/woff/file.woff') format('woff')
+}
+@font-face{
+  font-family:'PolySans Neutral';font-style:italic;font-weight:400;font-display:swap;
+  src:url('https://static.wixstatic.com/ufonts/44f42e_d592374634674997a361dab4866716a2/woff2/file.woff2') format('woff2'),
+      url('https://static.wixstatic.com/ufonts/44f42e_d592374634674997a361dab4866716a2/woff/file.woff') format('woff')
+}
+@font-face{
+  font-family:'PolySans Median Wide';font-style:normal;font-weight:600;font-display:swap;
+  src:url('https://static.wixstatic.com/ufonts/e440c8_215c457003a04c6a803c33ca8a5933af/woff2/file.woff2') format('woff2'),
+      url('https://static.wixstatic.com/ufonts/e440c8_215c457003a04c6a803c33ca8a5933af/woff/file.woff') format('woff')
+}
+:root{
+  /* Paleta REAL Trilha · extraída de somostrilha.com.br */
+  --bg:#e9e8e4;--bg-warm:#E8E8E3;--bg-dark:#1d1d1b;
+  --surface:#FFFFFF;--surface-soft:#f3f2ee;--surface-warm:#E8E8E3;
+  --border:#d8d6cf;--border-strong:#c2bfb5;--border-soft:#dfddd5;
+  --accent:#ee4c20;--accent-dark:#c43815;--accent-light:#fde0d3;--accent-soft:#fdeee6;
+  --copper:#e96735;--copper-dark:#c4501f;
+  --bege:#E8E8E3;--bege-dark:#c2bfb5;
+  --text:#212121;--text-soft:#454c47;--muted:#717c72;--light:#9eafaa;
+  --green-deep:#333A32;--green-soft:#e2e9e5;
+  --danger:#C13A1F;--danger-soft:#FAEBE7;
+  --success:#333A32;--success-soft:#e2e9e5;
+  --info:#2b5672;--info-soft:#E6EEF5;
+  --r:20px;--r-sm:14px;--r-xs:8px;
+  --shadow-sm:0 1px 3px rgba(29,29,27,.04),0 1px 2px rgba(29,29,27,.06);
+  --shadow:0 4px 16px rgba(29,29,27,.06),0 1px 4px rgba(29,29,27,.04);
+  --shadow-md:0 12px 40px rgba(29,29,27,.08),0 2px 8px rgba(29,29,27,.04);
+  --shadow-lg:0 24px 64px rgba(29,29,27,.10),0 4px 16px rgba(29,29,27,.06);
+  /* Tipografia PolySans · Trilha */
+  --display:'PolySans Bulky Wide','PolySans Bulky',system-ui,sans-serif;
+  --heading:'PolySans Bulky','PolySans Median',system-ui,sans-serif;
+  --serif:'PolySans Bulky','PolySans Median',system-ui,sans-serif;
+  --sans:'PolySans Slim','PolySans Median',system-ui,sans-serif;
+  --medium:'PolySans Median',system-ui,sans-serif;
+  --italic:'PolySans Neutral','PolySans Slim',system-ui,sans-serif;
+  --mono:'PolySans Median',ui-monospace,monospace;
+  --max:1280px;--gutter:clamp(24px,4vw,48px);
+  /* Funnel colors · ajustadas pro accent real #ee4c20 */
+  --f1:#FFD4B8;--f1d:#FFB389;
+  --f2:#FFB389;--f2d:#FF8B5A;
+  --f3:#FF8B5A;--f3d:#F26A33;
+  --f4:#F26A33;--f4d:#ee4c20;
+  --f5:#ee4c20;--f5d:#c43815;
+  --f6:#9c2e10;--f6d:#1d1d1b;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:var(--sans);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  font-feature-settings:'ss01','cv11';
+  background-image:
+    radial-gradient(at 90% 5%,rgba(238,76,32,.05) 0,transparent 50%),
+    radial-gradient(at 10% 95%,rgba(201,169,97,.06) 0,transparent 50%);
+}
+
+/* ───── TYPOGRAPHY ───── */
+.serif{font-family:var(--serif)}
+.mono{font-family:var(--mono)}
+.eyebrow{
+  font-size:11px;font-weight:700;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--accent);
+  display:inline-flex;align-items:center;gap:10px
+}
+.eyebrow::before{content:'';width:18px;height:1px;background:currentColor;display:inline-block}
+.eyebrow.muted{color:var(--muted)}
+.eyebrow.muted::before{background:var(--bege-dark)}
+
+h1.hero-title{
+  font-family:var(--display);font-weight:800;
+  font-size:clamp(40px,6.5vw,80px);line-height:.98;
+  letter-spacing:-0.04em;
+  margin:0;color:var(--text)
+}
+h1.hero-title em{font-family:var(--italic);font-weight:400;color:var(--accent)}
+
+h2.section-title{
+  font-family:var(--display);font-weight:800;
+  font-size:clamp(38px,5.5vw,72px);line-height:1.02;
+  letter-spacing:-0.035em;
+  color:var(--text);margin-top:8px
+}
+h2.section-title em{font-family:var(--italic);font-weight:400;color:var(--accent)}
+
+.lede{
+  font-family:var(--sans);font-weight:400;
+  font-size:clamp(17px,1.5vw,21px);line-height:1.55;
+  color:var(--text-soft);max-width:62ch;letter-spacing:-0.005em
+}
+
+.card-title{
+  font-family:var(--serif);font-weight:500;
+  font-size:clamp(20px,1.8vw,26px);line-height:1.15;
+  letter-spacing:-0.02em;color:var(--text)
+}
+.card-eyebrow{
+  font-size:10px;font-weight:700;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--muted)
+}
+
+/* ───── NAV ───── */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(233,232,228,.85);backdrop-filter:saturate(180%) blur(20px);
+  border-bottom:1px solid rgba(217,207,194,.4)
+}
+.nav-inner{
+  max-width:var(--max);margin:0 auto;padding:18px var(--gutter);
+  display:flex;align-items:center;justify-content:space-between;gap:24px
+}
+.nav-brand{display:flex;align-items:center;gap:14px}
+.nav-mark{
+  width:38px;height:38px;
+  display:flex;align-items:center;justify-content:center
+}
+.nav-mark img{width:100%;height:100%;object-fit:contain}
+.nav-brand-text{display:flex;flex-direction:column;line-height:1.1}
+.nav-brand-text small{font-size:10px;color:var(--muted);font-weight:500;letter-spacing:.04em}
+.nav-brand-text b{font-size:14px;color:var(--text);font-weight:600;letter-spacing:-0.01em}
+.nav-cta{
+  background:var(--text);color:var(--bg);border:none;cursor:pointer;
+  font-family:inherit;font-size:13px;font-weight:600;
+  padding:10px 18px;border-radius:999px;display:inline-flex;align-items:center;gap:8px;
+  transition:all .2s
+}
+.nav-cta:hover{background:var(--accent);transform:translateY(-1px)}
+
+/* ───── MINI FUNNEL (side nav) ───── */
+.mini-funnel{
+  position:fixed;right:24px;top:50%;transform:translateY(-50%);
+  z-index:50;display:flex;flex-direction:column;gap:5px;
+  background:rgba(255,255,255,.7);backdrop-filter:blur(10px);
+  padding:16px 14px;border-radius:18px;border:1px solid var(--border-soft);
+  box-shadow:var(--shadow)
+}
+.mini-funnel a{
+  display:block;height:14px;border-radius:3px;
+  transition:all .3s cubic-bezier(.2,0,.2,1);
+  position:relative;text-decoration:none;
+  background:linear-gradient(90deg,var(--f1),var(--f1d))
+}
+.mini-funnel a:nth-child(1){width:80px}
+.mini-funnel a:nth-child(2){width:68px;background:linear-gradient(90deg,var(--f2),var(--f2d))}
+.mini-funnel a:nth-child(3){width:56px;background:linear-gradient(90deg,var(--f3),var(--f3d))}
+.mini-funnel a:nth-child(4){width:46px;background:linear-gradient(90deg,var(--f4),var(--f4d))}
+.mini-funnel a:nth-child(5){width:36px;background:linear-gradient(90deg,var(--f5),var(--f5d))}
+.mini-funnel a:nth-child(6){width:24px;background:linear-gradient(90deg,var(--f6),var(--f6d))}
+.mini-funnel a:hover,.mini-funnel a.active{
+  height:18px;box-shadow:0 0 14px rgba(238,76,32,.4);transform:scaleX(1.05)
+}
+.mini-funnel a::after{
+  content:attr(data-name);
+  position:absolute;right:calc(100% + 14px);top:50%;transform:translateY(-50%) translateX(6px);
+  background:var(--text);color:var(--bg);padding:5px 12px;border-radius:999px;
+  font-family:var(--sans);font-size:11px;font-weight:600;white-space:nowrap;
+  opacity:0;pointer-events:none;transition:all .2s;letter-spacing:.01em
+}
+.mini-funnel a:hover::after,.mini-funnel a.active::after{opacity:1;transform:translateY(-50%) translateX(0)}
+@media(max-width:900px){.mini-funnel{display:none}}
+
+/* ───── CONTAINER ───── */
+.container{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.container-wide{max-width:1440px;margin:0 auto;padding:0 var(--gutter)}
+
+/* ───── SECTION ───── */
+section{padding:clamp(80px,11vw,140px) 0;position:relative}
+section.tight{padding:clamp(60px,8vw,100px) 0}
+section.dark{background:var(--bg-dark);color:var(--bg)}
+section.dark h2.section-title,section.dark h1.hero-title{color:var(--bg)}
+section.dark .lede{color:rgba(233,232,228,.8)}
+section.dark .eyebrow{color:var(--copper)}
+section.warm{background:var(--bg-warm)}
+
+.section-head{margin-bottom:clamp(48px,7vw,80px);max-width:880px}
+.section-marker{
+  font-family:var(--italic);font-weight:400;
+  font-size:14px;letter-spacing:.02em;color:var(--muted);
+  margin-bottom:20px;display:flex;align-items:baseline;gap:14px
+}
+.section-marker .roman{
+  font-size:56px;line-height:.9;color:var(--accent);font-weight:400;letter-spacing:-0.04em
+}
+
+/* ════════════════════════════════════════ */
+/* HERO · FUNIL INVERTIDO                   */
+/* ════════════════════════════════════════ */
+.hero{
+  min-height:100vh;padding:120px 0 60px;
+  display:flex;align-items:center;position:relative;overflow:hidden
+}
+.hero::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background-image:
+    radial-gradient(circle at 15% 25%,rgba(238,76,32,.06),transparent 50%),
+    radial-gradient(circle at 85% 75%,rgba(201,169,97,.07),transparent 50%);
+}
+.hero-content{position:relative;width:100%}
+.hero-intro{text-align:center;max-width:780px;margin:0 auto 60px}
+.hero-intro h1{margin-top:18px}
+.hero-intro .lede{margin:24px auto 0;max-width:580px}
+
+/* FUNNEL */
+.funnel{
+  display:flex;flex-direction:column;gap:6px;
+  max-width:1100px;margin:0 auto;padding:0 16px
+}
+.funnel-row{
+  display:flex;align-items:center;
+  text-decoration:none;color:inherit;
+  margin:0 auto;
+  border-radius:18px;
+  padding:22px 32px;
+  position:relative;
+  cursor:pointer;
+  transition:all .35s cubic-bezier(.2,0,.2,1);
+  box-shadow:0 6px 20px rgba(0,0,0,.08),0 1px 3px rgba(0,0,0,.04);
+  font-family:var(--sans);
+  overflow:hidden;
+  min-width:260px
+}
+.funnel-row::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,var(--bg-color-start) 0%,var(--bg-color-end) 100%);
+  z-index:-1;border-radius:18px
+}
+.funnel-row::after{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 80% 50%,rgba(255,255,255,.18),transparent 60%);
+  pointer-events:none;border-radius:18px;opacity:0;transition:opacity .35s
+}
+.funnel-row:hover::after{opacity:1}
+.funnel-row:hover{
+  transform:translateY(-4px) scale(1.012);
+  box-shadow:0 16px 40px rgba(238,76,32,.25),0 4px 10px rgba(0,0,0,.08)
+}
+.funnel-row:active{transform:translateY(-2px) scale(1.006)}
+.f1{width:100%;background:linear-gradient(135deg,var(--f1),var(--f1d));color:#7A2E08}
+.f2{width:88%;background:linear-gradient(135deg,var(--f2),var(--f2d));color:#7A2E08}
+.f3{width:76%;background:linear-gradient(135deg,var(--f3),var(--f3d));color:#fff}
+.f4{width:64%;background:linear-gradient(135deg,var(--f4),var(--f4d));color:#fff}
+.f5{width:52%;background:linear-gradient(135deg,var(--f5),var(--f5d));color:#fff}
+.f6{width:32%;background:linear-gradient(135deg,var(--f6),var(--f6d));color:#fff}
+.funnel-row.f4 .f-name,.funnel-row.f5 .f-name{font-size:clamp(17px,1.4vw,20px)}
+.funnel-row.f4 .f-sub,.funnel-row.f5 .f-sub{font-size:11.5px}
+.funnel-row.f4 .f-stat,.funnel-row.f5 .f-stat{font-size:11px}
+.funnel-row.f4 .f-stat b,.funnel-row.f5 .f-stat b{font-size:15px}
+.funnel-row.f5 .f-left{margin-right:14px;min-width:24px}
+.funnel-row.f5 .f-roman{font-size:22px}
+.funnel-row.f5{padding:18px 22px}
+.funnel-row.f5 .f-right{margin-left:8px;gap:10px}
+
+.f-left{
+  display:flex;flex-direction:column;line-height:1;flex-shrink:0;
+  margin-right:24px;min-width:36px
+}
+.f-roman{
+  font-family:var(--italic);font-weight:400;
+  font-size:28px;letter-spacing:-0.02em;opacity:.7
+}
+.f-center{flex:1;display:flex;flex-direction:column;gap:4px;min-width:0}
+.f-name{
+  font-family:var(--serif);font-weight:500;font-size:clamp(20px,1.8vw,26px);
+  letter-spacing:-0.02em;line-height:1.1
+}
+.f-sub{font-size:13px;opacity:.75;font-weight:500;letter-spacing:-0.005em}
+.f-right{display:flex;align-items:center;gap:14px;flex-shrink:0;margin-left:16px}
+.f-stat{
+  text-align:right;font-family:var(--mono);font-size:13px;font-weight:500;
+  opacity:.85;letter-spacing:-0.01em
+}
+.f-stat b{display:block;font-family:var(--serif);font-weight:500;font-size:20px;letter-spacing:-0.02em;font-variant-numeric:tabular-nums;opacity:1}
+.f-arrow{
+  width:32px;height:32px;border-radius:50%;
+  background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.25);
+  display:flex;align-items:center;justify-content:center;
+  transition:all .3s
+}
+.funnel-row:hover .f-arrow{background:rgba(255,255,255,.4);transform:translateX(4px)}
+.f1 .f-arrow,.f2 .f-arrow{background:rgba(122,46,8,.12);border-color:rgba(122,46,8,.2);color:#7A2E08}
+.funnel-row.f1:hover .f-arrow,.funnel-row.f2:hover .f-arrow{background:rgba(122,46,8,.22)}
+.f-arrow svg{width:14px;height:14px}
+
+@media(max-width:760px){
+  .funnel-row{flex-direction:row;padding:16px 18px;min-width:auto}
+  .funnel-row{width:100%!important}
+  .f-stat{font-size:11px}.f-stat b{font-size:16px}
+  .f-name{font-size:18px}.f-sub{font-size:12px}
+  .f-roman{font-size:22px}
+  .f-arrow{width:26px;height:26px}
+}
+
+/* Funnel cascade animation */
+.funnel-row{animation:slidIn .8s cubic-bezier(.2,0,.2,1) backwards}
+.funnel-row.f1{animation-delay:.15s}
+.funnel-row.f2{animation-delay:.28s}
+.funnel-row.f3{animation-delay:.41s}
+.funnel-row.f4{animation-delay:.54s}
+.funnel-row.f5{animation-delay:.67s}
+.funnel-row.f6{animation-delay:.80s}
+@keyframes slidIn{
+  from{opacity:0;transform:translateY(20px) scale(.96)}
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
+
+/* Hero stats below funnel */
+.hero-meta{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:0;
+  margin-top:80px;border-top:1px solid var(--border-strong);padding-top:36px;
+  max-width:900px;margin-left:auto;margin-right:auto
+}
+@media(max-width:760px){.hero-meta{grid-template-columns:repeat(2,1fr);gap:24px 16px}}
+.hero-meta-item{padding-right:24px}
+.hero-meta-item small{font-size:10px;color:var(--muted);font-weight:700;letter-spacing:.15em;text-transform:uppercase;display:block;margin-bottom:6px}
+.hero-meta-item .v{
+  font-family:var(--serif);font-weight:500;font-size:clamp(22px,2.4vw,30px);line-height:1;letter-spacing:-0.03em;
+  color:var(--text);font-variant-numeric:tabular-nums
+}
+.hero-meta-item .v em{font-family:var(--italic);font-weight:400;color:var(--accent)}
+.hero-meta-item p{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.4}
+
+/* ───── REVEAL ───── */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,0,.2,1),transform .9s cubic-bezier(.2,0,.2,1)}
+.reveal.in{opacity:1;transform:translateY(0)}
+.reveal.delay-1{transition-delay:.08s}
+.reveal.delay-2{transition-delay:.16s}
+.reveal.delay-3{transition-delay:.24s}
+
+/* ───── BENTO / GRID ───── */
+.grid-12{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+.g-12{grid-column:span 12}.g-8{grid-column:span 8}.g-6{grid-column:span 6}.g-5{grid-column:span 5}.g-7{grid-column:span 7}.g-4{grid-column:span 4}.g-3{grid-column:span 3}
+@media(max-width:900px){.g-8,.g-6,.g-5,.g-7,.g-4,.g-3{grid-column:span 12}}
+
+/* ───── CARD ───── */
+.card{
+  background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--r);
+  padding:32px 28px;transition:all .35s;
+  display:flex;flex-direction:column;gap:18px
+}
+.card:hover{border-color:var(--border-strong);transform:translateY(-4px);box-shadow:var(--shadow-md)}
+.card-hd{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:0}
+.card-num{
+  font-family:var(--italic);font-weight:400;
+  font-size:24px;color:var(--muted);letter-spacing:-0.02em
+}
+
+/* ───── JOURNEY MAP ───── */
+.journey-map{width:100%;display:flex;justify-content:center;margin-top:32px;overflow-x:auto}
+.journey-map svg{max-width:1000px;width:100%;height:auto;min-width:720px}
+.journey-map .j-decision text{font-family:var(--medium);font-weight:600}
+.journey-map .j-node text.j-title{font-family:var(--medium);font-weight:500}
+.journey-map .j-node text.j-sub{font-family:var(--sans);font-weight:400}
+.journey-legend{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;margin-top:32px;font-size:12px;color:var(--muted)}
+.journey-legend-item{display:inline-flex;align-items:center;gap:8px}
+.journey-legend-dot{width:10px;height:10px;border-radius:3px}
+
+/* ───── BADGES ───── */
+.bdg{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:5px 12px;border-radius:999px;
+  font-size:11.5px;font-weight:600;letter-spacing:.01em;
+  border:1px solid transparent;white-space:nowrap
+}
+.bdg-orange{background:var(--accent-soft);color:var(--accent-dark);border-color:var(--accent-light)}
+.bdg-red{background:var(--danger-soft);color:var(--danger);border-color:#F2D4CE}
+.bdg-green{background:var(--success-soft);color:var(--success);border-color:#C8E4D7}
+.bdg-bege{background:var(--bege);color:#7A6952;border-color:var(--bege-dark)}
+.bdg-info{background:var(--info-soft);color:var(--info);border-color:#C8D9E8}
+.bdg-amber{background:#FFF3D9;color:#8B6914;border-color:#F2DDA0}
+.bdg-copper{background:#F5EBD4;color:var(--copper-dark);border-color:#E5D4A3}
+.bdg-soft{background:var(--surface-soft);color:var(--muted);border-color:var(--border-soft)}
+.bdg-dark{background:var(--text);color:var(--bg)}
+
+/* ───── LIST ───── */
+.dash-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:10px}
+.dash-list li{font-size:14px;color:var(--text-soft);line-height:1.55;display:flex;gap:12px}
+.dash-list li::before{content:'';display:block;width:16px;height:1px;background:var(--bege-dark);margin-top:11px;flex-shrink:0}
+.dash-list.accent li::before{background:var(--accent)}
+
+/* ───── INSIGHT ───── */
+.insight{
+  padding:24px 26px;border-radius:var(--r);border:1px solid;
+  display:flex;flex-direction:column;gap:12px;font-size:14px;line-height:1.55
+}
+.insight.risk{background:linear-gradient(135deg,var(--danger-soft),var(--surface));border-color:#F2D4CE;color:#7A2828}
+.insight.win{background:linear-gradient(135deg,var(--success-soft),var(--surface));border-color:#C8E4D7;color:#1E5440}
+.insight.note{background:var(--surface-soft);border-color:var(--border-soft);color:var(--text-soft)}
+.insight.copper{background:#F5EBD4;border-color:#E5D4A3;color:var(--copper-dark)}
+.insight strong{font-family:var(--serif);font-weight:500;font-size:18px;letter-spacing:-0.02em;color:var(--text);display:block;margin-bottom:2px}
+.insight ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:8px}
+.insight ul li{font-size:13.5px;display:flex;gap:10px}
+.insight ul li::before{content:'';display:block;width:14px;height:1px;background:currentColor;opacity:.4;margin-top:10px;flex-shrink:0}
+
+/* ───── SALESBOT TIMELINE ───── */
+.bot-flow{display:flex;flex-direction:column;gap:0;margin-top:8px}
+.bot-step{
+  display:grid;grid-template-columns:60px 1fr;gap:24px;padding:24px 0;
+  border-top:1px solid var(--border-soft)
+}
+.bot-step:first-child{border-top:none;padding-top:0}
+.bot-step:last-child{padding-bottom:0}
+.bot-step-num{
+  font-family:var(--italic);font-weight:400;
+  font-size:36px;line-height:1;color:var(--muted);letter-spacing:-0.02em
+}
+.bot-step-num.accent{color:var(--accent)}.bot-step-num.copper{color:var(--copper-dark)}
+.bot-step-content{display:flex;flex-direction:column;gap:12px}
+.bot-step-title{
+  font-family:var(--serif);font-weight:500;font-size:22px;line-height:1.15;
+  letter-spacing:-0.025em;color:var(--text)
+}
+.bot-step-meta{font-size:13px;color:var(--muted);line-height:1.5}
+.bot-msg{
+  background:var(--surface-soft);border:1px solid var(--border-soft);border-radius:var(--r-sm);
+  padding:16px 20px;font-size:14.5px;line-height:1.6;color:var(--text);position:relative;
+  max-width:640px
+}
+.bot-msg::before{content:'';position:absolute;left:20px;top:-1px;width:28px;height:2px;background:var(--accent)}
+.bot-msg .from{display:block;font-size:9px;color:var(--muted);font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:8px}
+.bot-msg b{font-weight:600}
+.bot-branches{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+
+/* ───── PUBLIC CARDS ───── */
+.public-card{background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--r);overflow:hidden;transition:all .35s}
+.public-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--border-strong)}
+.pc-banner{height:110px;padding:24px 28px;display:flex;align-items:flex-end;position:relative}
+.pc-banner.norte{background:linear-gradient(135deg,var(--accent-soft) 0%,#FFD9C2 100%)}
+.pc-banner.maceio{background:linear-gradient(135deg,var(--success-soft) 0%,#C8E4D7 100%)}
+.pc-banner.sul{background:linear-gradient(135deg,#FFF3D9 0%,#F5EBD4 100%)}
+.pc-banner-text{position:relative;z-index:1}
+.pc-banner-eyebrow{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--text-soft);margin-bottom:4px}
+.pc-banner-title{font-family:var(--serif);font-weight:500;font-size:28px;line-height:1;letter-spacing:-0.03em;color:var(--text)}
+.pc-banner-bdg{position:absolute;top:20px;right:24px}
+.pc-body{padding:24px 28px;display:flex;flex-direction:column;gap:20px}
+.pc-block-h{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.pc-text{font-size:14px;line-height:1.6;color:var(--text-soft)}
+.pc-text b{color:var(--text);font-weight:600}
+
+/* ───── FOLLOW-UP TIMELINE ───── */
+.fu-rail{position:relative;padding:50px 0 16px}
+.fu-line{position:absolute;left:5%;right:5%;top:84px;height:2px;background:linear-gradient(90deg,var(--success) 0%,#D49B6A 50%,var(--accent) 75%,var(--danger) 100%);opacity:.4;border-radius:1px}
+.fu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;position:relative}
+@media(max-width:760px){.fu-grid{grid-template-columns:1fr}.fu-line{display:none}}
+.fu-step{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px}
+.fu-day{font-family:var(--italic);font-weight:400;font-size:13px;color:var(--muted)}
+.fu-orb{
+  width:56px;height:56px;border-radius:50%;background:var(--surface);
+  border:2px solid var(--accent);
+  font-family:var(--serif);font-weight:500;font-size:18px;color:var(--accent);
+  display:flex;align-items:center;justify-content:center;
+  position:relative;z-index:2;box-shadow:var(--shadow-sm);font-variant-numeric:tabular-nums
+}
+.fu-orb.d0{background:var(--success);color:var(--bg);border-color:var(--success)}
+.fu-orb.d1{border-color:var(--success);color:var(--success)}
+.fu-orb.d3,.fu-orb.d7{border-color:#D49B6A;color:#A36F3D}
+.fu-orb.d15{border-color:var(--accent);color:var(--accent)}
+.fu-orb.d30{border-color:var(--danger);color:var(--danger)}
+.fu-title{font-family:var(--serif);font-weight:500;font-size:16px;letter-spacing:-0.02em;color:var(--text)}
+.fu-card{background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--r-sm);padding:12px 14px;font-size:12.5px;line-height:1.5;color:var(--text-soft);text-align:left;width:100%;box-shadow:var(--shadow-sm)}
+.fu-card .fu-obj{display:block;font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);margin-top:6px}
+
+/* ───── EXCEPTIONS GRID ───── */
+.exc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+@media(max-width:900px){.exc-grid{grid-template-columns:1fr}}
+.exc-card{padding:22px 24px;border-radius:var(--r-sm);font-size:13.5px;line-height:1.55;border:1px solid;background:var(--surface)}
+.exc-card-h{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.exc-card.ok{background:var(--success-soft);color:#1E5440;border-color:#C8E4D7}
+.exc-card.warn{background:#FFF3D9;color:#6B4F11;border-color:#F2DDA0}
+.exc-card.bad{background:var(--danger-soft);color:#7A2828;border-color:#F2D4CE}
+.exc-card b{font-weight:600}
+
+/* ───── FALHAS / FAQ ACCORDION ───── */
+.acc-list{display:flex;flex-direction:column;gap:12px}
+details.acc-item{background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--r);overflow:hidden;transition:all .3s}
+details.acc-item:hover{border-color:var(--border-strong);box-shadow:var(--shadow)}
+details.acc-item > summary{list-style:none;cursor:pointer;padding:20px 24px;display:flex;align-items:center;gap:18px}
+details.acc-item > summary::-webkit-details-marker{display:none}
+.acc-icon{
+  width:44px;height:44px;border-radius:12px;background:var(--accent-soft);color:var(--accent);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;border:1px solid var(--accent-light)
+}
+details.acc-item.crit .acc-icon{background:var(--danger-soft);color:var(--danger);border-color:#F2D4CE}
+details.acc-item.warn .acc-icon{background:#FFF3D9;color:#A36F3D;border-color:#F2DDA0}
+details.acc-item.info .acc-icon{background:var(--info-soft);color:var(--info);border-color:#C8D9E8}
+details.acc-item.ok .acc-icon{background:var(--success-soft);color:var(--success);border-color:#C8E4D7}
+.acc-text{flex:1}
+.acc-text h3{font-family:var(--serif);font-weight:500;font-size:19px;line-height:1.2;letter-spacing:-0.02em;color:var(--text)}
+.acc-text small{display:block;font-size:12.5px;color:var(--muted);margin-top:3px}
+.acc-chev{transition:transform .3s;color:var(--muted);width:18px;height:18px}
+details[open] .acc-chev{transform:rotate(180deg);color:var(--accent)}
+.acc-body{padding:0 24px 24px 86px;font-size:14px;line-height:1.7;color:var(--text-soft);border-top:1px solid var(--border-soft);padding-top:18px}
+.acc-body ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:10px}
+.acc-body ul li{display:flex;gap:12px;align-items:flex-start}
+.acc-body ul li::before{content:'';display:block;width:14px;height:1px;background:var(--accent);margin-top:11px;flex-shrink:0}
+.acc-body b{color:var(--text);font-weight:600}
+
+/* ───── PIPELINE STAGES ───── */
+.pipeline-grid{display:grid;grid-template-columns:repeat(11,minmax(180px,1fr));gap:12px;overflow-x:auto;padding:8px 4px 28px;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--bege-dark) transparent}
+.pipe-stage{background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--r-sm);overflow:hidden;scroll-snap-align:start;display:flex;flex-direction:column;transition:all .3s;min-height:200px}
+.pipe-stage:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--border-strong)}
+.pipe-stage-h{padding:16px 16px 12px;border-bottom:1px solid var(--border-soft)}
+.pipe-stage-num{font-family:var(--italic);font-weight:400;font-size:11px;color:var(--muted);letter-spacing:.04em;margin-bottom:4px}
+.pipe-stage-name{font-family:var(--serif);font-weight:500;font-size:16px;line-height:1.2;letter-spacing:-0.02em;color:var(--text)}
+.pipe-stage-body{padding:14px 16px;flex:1;display:flex;flex-direction:column;gap:8px}
+.pipe-stage-desc{font-size:12px;color:var(--text-soft);line-height:1.45}
+.pipe-stage-meta{font-size:9px;color:var(--muted);font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+.pipe-stage-sla{margin-top:auto;padding-top:10px;border-top:1px solid var(--border-soft);font-size:9px;color:var(--muted);font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+.pipe-stage-sla b{display:block;font-family:var(--medium);font-weight:500;font-size:12.5px;color:var(--accent);letter-spacing:-0.01em;margin-top:3px;line-height:1.35;text-transform:none}
+.pipe-stage.win{background:linear-gradient(180deg,var(--success-soft),var(--surface))}
+.pipe-stage.win .pipe-stage-num{color:var(--success)}
+.pipe-stage.lose{background:linear-gradient(180deg,var(--danger-soft),var(--surface))}
+.pipe-stage.lose .pipe-stage-num{color:var(--danger)}
+
+/* ───── GLOSSARY ───── */
+.gloss-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:8px}
+@media(max-width:900px){.gloss-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.gloss-grid{grid-template-columns:1fr}}
+.gloss-item{background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--r-sm);padding:20px 22px;transition:all .25s;display:flex;flex-direction:column;gap:8px;border-top:3px solid var(--accent)}
+.gloss-item:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--border-strong)}
+.gloss-term{font-family:var(--serif);font-weight:500;font-size:17px;letter-spacing:-0.02em;color:var(--text);line-height:1.2}
+.gloss-def{font-size:13px;line-height:1.55;color:var(--text-soft)}
+.gloss-def b{color:var(--text);font-weight:600}
+
+/* ───── FOOTER ───── */
+.foot{background:var(--bg-dark);color:rgba(233,232,228,.7);padding:64px 0 32px;text-align:center}
+.foot-mark{display:inline-flex;align-items:center;gap:14px;margin-bottom:24px}
+.foot-mark-icon{width:48px;height:48px;display:flex;align-items:center;justify-content:center}
+.foot-mark-icon img{width:100%;height:100%;object-fit:contain}
+.foot-mark-text{text-align:left;font-family:var(--serif);font-weight:500;font-size:18px;color:var(--bg);letter-spacing:-0.02em}
+.foot-mark-text small{display:block;font-family:var(--sans);font-size:11px;font-weight:500;color:rgba(233,232,228,.5);letter-spacing:.05em;margin-top:2px;font-style:normal}
+.foot-meta{font-size:12px;color:rgba(233,232,228,.5);letter-spacing:.05em;margin-top:14px}
+.foot-meta b{color:var(--copper);font-weight:500}
+
+/* ───── PRINT ───── */
+@media print{
+  body{background:#fff;color:#000}
+  .nav,.mini-funnel,.nav-cta,.back-top{display:none!important}
+  section{padding:32px 0;page-break-inside:avoid}
+  .hero{min-height:auto;padding:0}
+  .funnel-row{break-inside:avoid;box-shadow:none!important}
+  .card,.public-card,.exc-card,.insight,.acc-item,.pipe-stage,.gloss-item{box-shadow:none!important;border:1px solid #ddd!important;break-inside:avoid;background:#fff!important}
+  .foot{background:#fff;color:#666}
+  details.acc-item{break-inside:avoid}
+  details.acc-item > summary{cursor:default}
+  details.acc-item[open] .acc-body,details.acc-item .acc-body{display:block}
+  section.dark{background:#fff!important;color:#000!important}
+}
+
+::selection{background:var(--accent);color:#fff}
+</style>
+</head>
+<body>
+
+<!-- ════════ NAV ════════ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand" style="text-decoration:none">
+      <div class="nav-mark"><img src="https://static.wixstatic.com/media/9e0e31_d413da8154a84961a8c3ead79baf3c3e~mv2.png/v1/fill/w_192,h_192,lg_1,usm_0.66_1.00_0.01/9e0e31_d413da8154a84961a8c3ead79baf3c3e~mv2.png" alt="Trilha · símbolo"/></div>
+      <div class="nav-brand-text">
+        <small>TRILHA · PERFORMANCE DIGITAL</small>
+        <b>Guia do Funil &amp; Fluxos</b>
+      </div>
+    </a>
+    <button class="nav-cta" onclick="window.print()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+      Salvar em PDF
+    </button>
+  </div>
+</nav>
+
+<!-- ════════ MINI FUNNEL (side nav) ════════ -->
+<div class="mini-funnel" id="miniFunnel">
+  <a href="#metodo" data-target="metodo" data-name="i · O Método"></a>
+  <a href="#funil" data-target="funil" data-name="ii · O Funil"></a>
+  <a href="#pre-atendimento" data-target="pre-atendimento" data-name="iii · Pré-atendimento"></a>
+  <a href="#follow-up" data-target="follow-up" data-name="iv · Follow-up"></a>
+  <a href="#nutricao" data-target="nutricao" data-name="v · Nutrição"></a>
+  <a href="#glossario" data-target="glossario" data-name="vi · Glossário"></a>
+</div>
+
+<!-- ════════ HERO · FUNIL INVERTIDO ════════ -->
+<section class="hero" id="top">
+  <div class="container">
+    <div class="hero-intro">
+      <div class="eyebrow">Guia da operação · Trilha Performance Digital</div>
+      <h1 class="hero-title">O caminho do lead, da primeira mensagem <em>à venda.</em></h1>
+      <p class="lede">Como funciona o funil que trabalha seus leads no Kommo: etapa por etapa, fluxo por fluxo. Clique numa fatia pra mergulhar.</p>
+    </div>
+
+    <div class="funnel">
+      <a href="#metodo" class="funnel-row f1">
+        <div class="f-left"><div class="f-roman">i</div></div>
+        <div class="f-center">
+          <div class="f-name">O Método</div>
+          <div class="f-sub">Por que sua operação funciona assim</div>
+        </div>
+        <div class="f-right">
+          <div class="f-stat">Leitura<b>5 min</b></div>
+          <div class="f-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </div>
+      </a>
+
+      <a href="#funil" class="funnel-row f2">
+        <div class="f-left"><div class="f-roman">ii</div></div>
+        <div class="f-center">
+          <div class="f-name">O Funil</div>
+          <div class="f-sub">As 10 etapas no Kommo, uma a uma</div>
+        </div>
+        <div class="f-right">
+          <div class="f-stat">Etapas<b>10</b></div>
+          <div class="f-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </div>
+      </a>
+
+      <a href="#pre-atendimento" class="funnel-row f3">
+        <div class="f-left"><div class="f-roman">iii</div></div>
+        <div class="f-center">
+          <div class="f-name">Pré-atendimento</div>
+          <div class="f-sub">O bot que qualifica antes de chegar em você</div>
+        </div>
+        <div class="f-right">
+          <div class="f-stat">Atende<b>24/7</b></div>
+          <div class="f-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </div>
+      </a>
+
+      <a href="#follow-up" class="funnel-row f4">
+        <div class="f-left"><div class="f-roman">iv</div></div>
+        <div class="f-center">
+          <div class="f-name">Follow-up</div>
+          <div class="f-sub">A régua que persegue o lead por você</div>
+        </div>
+        <div class="f-right">
+          <div class="f-stat">Janela<b>D+0 a D+30</b></div>
+          <div class="f-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </div>
+      </a>
+
+      <a href="#nutricao" class="funnel-row f5">
+        <div class="f-left"><div class="f-roman">v</div></div>
+        <div class="f-center">
+          <div class="f-name">Nutrição &amp; Reativação</div>
+          <div class="f-sub">Reaquece quem não fechou agora</div>
+        </div>
+        <div class="f-right">
+          <div class="f-stat">Base<b>Sempre quente</b></div>
+          <div class="f-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+        </div>
+      </a>
+    </div>
+
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <small>Funil padrão</small>
+        <div class="v"><em>10</em> etapas</div>
+        <p>Da primeira mensagem até a venda</p>
+      </div>
+      <div class="hero-meta-item">
+        <small>Fluxos automáticos</small>
+        <div class="v"><em>3</em> fluxos</div>
+        <p>Pré-atendimento · follow-up · nutrição</p>
+      </div>
+      <div class="hero-meta-item">
+        <small>Onde tudo vive</small>
+        <div class="v">1 <em>CRM</em></div>
+        <p>Kommo · cada lead rastreável</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ ETAPA i · O MÉTODO ════════ -->
+<section id="metodo">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-marker"><span class="roman">i</span> · O Método</div>
+      <h2 class="section-title">Três engrenagens,<br/><em>uma máquina de vendas.</em></h2>
+      <p class="lede" style="margin-top:24px">
+        Tudo que a Trilha monta pra sua operação existe pra resolver um problema só: <b style="color:var(--text)">nenhum lead pode cair no esquecimento.</b>
+        Pra isso, três engrenagens trabalham juntas, do anúncio à assinatura do contrato.
+      </p>
+    </div>
+
+    <div class="grid-12 reveal">
+
+      <div class="g-4 card">
+        <div class="card-hd">
+          <div>
+            <div class="card-eyebrow">Engrenagem 01</div>
+            <div class="card-title">Atrair com intenção</div>
+          </div>
+          <div class="card-num">01</div>
+        </div>
+        <p class="pc-text">
+          Tráfego pago no Instagram e Facebook leva o lead certo até a sua porta. Não é volume por volume,
+          cada real investido é <b>rastreado</b> até virar (ou não) uma venda, pra saber qual anúncio, público e região realmente trazem comprador.
+        </p>
+      </div>
+
+      <div class="g-4 card">
+        <div class="card-hd">
+          <div>
+            <div class="card-eyebrow">Engrenagem 02</div>
+            <div class="card-title">Qualificar sem perder tempo</div>
+          </div>
+          <div class="card-num">02</div>
+        </div>
+        <p class="pc-text">
+          Um bot e o atendimento humano filtram o curioso do comprador antes do lead chegar em você.
+          Resultado: você recebe contato com <b>WhatsApp válido e interesse confirmado</b>, não um print de DM solto.
+        </p>
+      </div>
+
+      <div class="g-4 card">
+        <div class="card-hd">
+          <div>
+            <div class="card-eyebrow">Engrenagem 03</div>
+            <div class="card-title">Conduzir e não largar</div>
+          </div>
+          <div class="card-num">03</div>
+        </div>
+        <p class="pc-text">
+          O Kommo organiza cada lead por etapa, a régua de follow-up cobra retorno sozinha e a nutrição
+          reaquece quem esfriou. <b>O lead nunca some</b>, ele sempre está em alguma etapa, com um próximo passo definido.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="insight note reveal" style="margin-top:24px;max-width:none">
+      <strong>Por que isso te interessa diretamente</strong>
+      Quanto mais o sistema cuida da parte repetitiva (responder na hora, lembrar de dar retorno, reaquecer lead frio),
+      mais o seu tempo vai pro que só você faz: entender a necessidade, apresentar o imóvel e fechar. O funil não substitui o corretor.
+      Ele tira do corretor o trabalho que faz perder venda por esquecimento.
+    </div>
+  </div>
+</section>
+
+<!-- ════════ JORNADA VISUAL ════════ -->
+<section id="jornada" class="warm">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow muted">Visão completa</div>
+      <h2 class="section-title">A jornada do lead,<br/><em>em um mapa.</em></h2>
+      <p class="lede" style="margin-top:24px">
+        Cada caixa é uma etapa ou uma decisão. As linhas mostram o caminho normal; a linha pontilhada mostra
+        o que acontece com quem não engaja, ele não é descartado, volta pra nutrição e pode reentrar no funil.
+      </p>
+    </div>
+
+    <div class="journey-map reveal">
+      <svg viewBox="0 0 1000 1130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa da jornada do lead">
+        <defs>
+          <marker id="jArr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M0,0 L10,5 L0,10 z" fill="#c2bfb5"/>
+          </marker>
+          <marker id="jArrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M0,0 L10,5 L0,10 z" fill="#ee4c20"/>
+          </marker>
+          <marker id="jArrGold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M0,0 L10,5 L0,10 z" fill="#A8893F"/>
+          </marker>
+          <linearGradient id="jVendaGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#ee4c20"/>
+            <stop offset="100%" stop-color="#c43815"/>
+          </linearGradient>
+        </defs>
+
+        <!-- ═══ LINHAS DE CONEXÃO ═══ -->
+        <path d="M 500 135 L 500 183" stroke="#c2bfb5" stroke-width="2" fill="none" marker-end="url(#jArr)"/>
+        <path d="M 500 265 L 500 313" stroke="#c2bfb5" stroke-width="2" fill="none" marker-end="url(#jArr)"/>
+        <path d="M 500 395 L 500 443" stroke="#c2bfb5" stroke-width="2" fill="none" marker-end="url(#jArr)"/>
+        <path d="M 500 525 L 500 545" stroke="#c2bfb5" stroke-width="2" fill="none"/>
+        <!-- decisão → Visita (SIM) -->
+        <path d="M 500 567 L 500 603" stroke="#ee4c20" stroke-width="2.5" fill="none" marker-end="url(#jArrAcc)"/>
+        <!-- decisão → Nutrição (NÃO) -->
+        <path d="M 562 556 Q 790 556 790 603" stroke="#A8893F" stroke-width="2" stroke-dasharray="5,4" fill="none" marker-end="url(#jArrGold)"/>
+        <path d="M 500 685 L 500 733" stroke="#c2bfb5" stroke-width="2" fill="none" marker-end="url(#jArr)"/>
+        <path d="M 500 815 L 500 863" stroke="#c2bfb5" stroke-width="2" fill="none" marker-end="url(#jArr)"/>
+        <path d="M 500 945 L 500 993" stroke="#ee4c20" stroke-width="2.5" fill="none" marker-end="url(#jArrAcc)"/>
+        <!-- Nutrição volta pro Pré-atendimento (loop pela direita) -->
+        <path d="M 900 645 Q 972 645 972 425 Q 972 225 622 225" stroke="#A8893F" stroke-width="1.5" stroke-dasharray="6,5" fill="none" marker-end="url(#jArrGold)"/>
+
+        <!-- ═══ DECISÃO ═══ -->
+        <g class="j-decision">
+          <rect x="438" y="545" width="124" height="22" rx="11" fill="#fdeee6" stroke="#fde0d3"/>
+          <text x="500" y="560" font-size="11" fill="#c43815" text-anchor="middle">respondeu?</text>
+        </g>
+        <text x="510" y="592" font-size="10" font-weight="600" fill="#ee4c20" font-family="PolySans Slim, system-ui">SIM</text>
+        <text x="600" y="548" font-size="10" font-weight="600" fill="#A8893F" font-family="PolySans Slim, system-ui">NÃO</text>
+
+        <!-- Label do loop de nutrição -->
+        <g transform="translate(972,330)">
+          <rect x="-46" y="-12" width="92" height="22" rx="11" fill="#F5EBD4" stroke="#E5D4A3"/>
+          <text x="0" y="3" font-size="10" font-weight="600" fill="#A8893F" text-anchor="middle" font-family="PolySans Median, system-ui">reativação</text>
+        </g>
+
+        <!-- ═══ NÓS ═══ -->
+
+        <!-- 1. Anúncio · Instagram -->
+        <g class="j-node" transform="translate(380,55)">
+          <rect width="240" height="80" rx="16" fill="white" stroke="#d8d6cf" stroke-width="1.5"/>
+          <g transform="translate(18,20)">
+            <rect width="40" height="40" rx="10" fill="#FFE5DA"/>
+            <g transform="translate(8,8)" stroke="#ee4c20" stroke-width="2" fill="none" stroke-linecap="round">
+              <rect x="1" y="1" width="22" height="22" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="18" cy="6" r="0.8" fill="#ee4c20"/>
+            </g>
+          </g>
+          <text x="76" y="36" class="j-title" font-size="15" fill="#212121">Anúncio</text>
+          <text x="76" y="58" class="j-sub" font-size="11" fill="#717c72">Instagram · Facebook</text>
+        </g>
+
+        <!-- 2. Pré-atendimento · Bot -->
+        <g class="j-node" transform="translate(380,185)">
+          <rect width="240" height="80" rx="16" fill="white" stroke="#d8d6cf" stroke-width="1.5"/>
+          <g transform="translate(18,20)">
+            <rect width="40" height="40" rx="10" fill="#FFF3D9"/>
+            <g transform="translate(8,8)" stroke="#A36F3D" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="9" width="20" height="13" rx="2"/>
+              <circle cx="12" cy="4" r="1.5"/>
+              <line x1="12" y1="5.5" x2="12" y2="9"/>
+              <circle cx="8" cy="15" r="1" fill="#A36F3D"/>
+              <circle cx="16" cy="15" r="1" fill="#A36F3D"/>
+            </g>
+          </g>
+          <text x="76" y="36" class="j-title" font-size="15" fill="#212121">Pré-atendimento</text>
+          <text x="76" y="58" class="j-sub" font-size="11" fill="#717c72">Bot · capta o WhatsApp</text>
+        </g>
+
+        <!-- 3. Corretor · WhatsApp -->
+        <g class="j-node" transform="translate(380,315)">
+          <rect width="240" height="80" rx="16" fill="white" stroke="#d8d6cf" stroke-width="1.5"/>
+          <g transform="translate(18,20)">
+            <rect width="40" height="40" rx="10" fill="#DCFCE7"/>
+            <g transform="translate(8,8)" stroke="#16A34A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L2 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5z"/>
+            </g>
+          </g>
+          <text x="76" y="36" class="j-title" font-size="15" fill="#212121">Corretor</text>
+          <text x="76" y="58" class="j-sub" font-size="11" fill="#717c72">Lead distribuído · Kommo</text>
+        </g>
+
+        <!-- 4. Follow-up -->
+        <g class="j-node" transform="translate(380,445)">
+          <rect width="240" height="80" rx="16" fill="white" stroke="#d8d6cf" stroke-width="1.5"/>
+          <g transform="translate(18,20)">
+            <rect width="40" height="40" rx="10" fill="#DCFCE7"/>
+            <g transform="translate(8,8)" stroke="#16A34A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/>
+              <polyline points="12 7 12 12 15 14"/>
+            </g>
+          </g>
+          <text x="76" y="36" class="j-title" font-size="15" fill="#212121">Follow-up</text>
+          <text x="76" y="58" class="j-sub" font-size="11" fill="#717c72">Régua D+0 a D+30</text>
+        </g>
+
+        <!-- 5a. Nutrição (direita) -->
+        <g class="j-node" transform="translate(680,603)">
+          <rect width="220" height="80" rx="16" fill="white" stroke="#A8893F" stroke-width="1.5" stroke-dasharray="5,4"/>
+          <g transform="translate(16,20)">
+            <rect width="40" height="40" rx="10" fill="#F5EBD4"/>
+            <g transform="translate(8,8)" stroke="#A8893F" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12a9 9 0 1 1-3-6.7L21 8"/>
+              <polyline points="21 3 21 8 16 8"/>
+            </g>
+          </g>
+          <text x="74" y="36" class="j-title" font-size="14" fill="#212121">Nutrição</text>
+          <text x="74" y="56" class="j-sub" font-size="11" fill="#717c72">Reaquece e reativa</text>
+        </g>
+
+        <!-- 5b. Reunião / Visita -->
+        <g class="j-node" transform="translate(380,603)">
+          <rect width="240" height="80" rx="16" fill="white" stroke="#d8d6cf" stroke-width="1.5"/>
+          <g transform="translate(18,20)">
+            <rect width="40" height="40" rx="10" fill="#fdeee6"/>
+            <g transform="translate(8,8)" stroke="#ee4c20" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </g>
+          </g>
+          <text x="76" y="36" class="j-title" font-size="15" fill="#212121">Reunião / Visita</text>
+          <text x="76" y="58" class="j-sub" font-size="11" fill="#717c72">Agendada e realizada</text>
+        </g>
+
+        <!-- 6. Em negociação / Proposta -->
+        <g class="j-node" transform="translate(380,733)">
+          <rect width="240" height="80" rx="16" fill="white" stroke="#d8d6cf" stroke-width="1.5"/>
+          <g transform="translate(18,20)">
+            <rect width="40" height="40" rx="10" fill="#E6EEF5"/>
+            <g transform="translate(8,8)" stroke="#2b5672" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="8" y1="13" x2="16" y2="13"/>
+              <line x1="8" y1="17" x2="14" y2="17"/>
+            </g>
+          </g>
+          <text x="76" y="36" class="j-title" font-size="15" fill="#212121">Negociação</text>
+          <text x="76" y="58" class="j-sub" font-size="11" fill="#717c72">Proposta enviada</text>
+        </g>
+
+        <!-- 7. Venda -->
+        <g class="j-node" transform="translate(380,863)">
+          <rect width="240" height="80" rx="16" fill="url(#jVendaGrad)"/>
+          <g transform="translate(18,20)">
+            <rect width="40" height="40" rx="10" fill="rgba(255,255,255,.2)"/>
+            <g transform="translate(8,8)" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </g>
+          </g>
+          <text x="76" y="36" class="j-title" font-size="15" fill="white">Venda fechada</text>
+          <text x="76" y="58" class="j-sub" font-size="11" fill="rgba(255,255,255,.8)">Contrato · indicação</text>
+        </g>
+
+      </svg>
+    </div>
+
+    <div class="journey-legend reveal">
+      <div class="journey-legend-item"><span class="journey-legend-dot" style="background:#FFE5DA;border:1px solid #ee4c20"></span>Anúncio</div>
+      <div class="journey-legend-item"><span class="journey-legend-dot" style="background:#FFF3D9;border:1px solid #A36F3D"></span>Bot</div>
+      <div class="journey-legend-item"><span class="journey-legend-dot" style="background:#DCFCE7;border:1px solid #16A34A"></span>Atendimento humano</div>
+      <div class="journey-legend-item"><span class="journey-legend-dot" style="background:#fdeee6;border:1px solid #ee4c20"></span>Etapa-chave</div>
+      <div class="journey-legend-item"><span class="journey-legend-dot" style="background:#f3f2ee;border:1px dashed #A8893F"></span>Nutrição · loop</div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ ETAPA ii · O FUNIL (10 ETAPAS) ════════ -->
+<section id="funil">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-marker"><span class="roman">ii</span> · O Funil · 10 etapas</div>
+      <h2 class="section-title">Toda etapa tem um dono<br/>e um <em>próximo passo.</em></h2>
+      <p class="lede" style="margin-top:24px">
+        No Kommo, o lead caminha por colunas. Cada coluna diz três coisas: <b style="color:var(--text)">o que significa</b>, <b style="color:var(--text)">de quem é a vez</b>
+        e <b style="color:var(--text)">o que você (corretor) faz</b>. Arraste pra ver as 10 etapas e o desfecho.
+      </p>
+    </div>
+
+    <div class="container-wide reveal" style="margin-top:8px;padding:0">
+      <div class="pipeline-grid" style="padding-left:0;padding-right:0">
+
+        <div class="pipe-stage"><div class="pipe-stage-h"><div class="pipe-stage-num">Etapa 01</div><div class="pipe-stage-name">Leads de entrada</div></div><div class="pipe-stage-body"><div class="pipe-stage-desc">Lead acabou de chegar do anúncio. Ainda não foi tocado por ninguém.</div><div class="pipe-stage-meta">De quem é a vez: Sistema</div><div class="pipe-stage-sla">VOCÊ FAZ<b>Nada ainda. O bot assume primeiro.</b></div></div></div>
+
+        <div class="pipe-stage"><div class="pipe-stage-h"><div class="pipe-stage-num">Etapa 02</div><div class="pipe-stage-name">Pré-atendimento</div></div><div class="pipe-stage-body"><div class="pipe-stage-desc">Bot confirma o interesse e capta o WhatsApp pra tirar a conversa do Direct.</div><div class="pipe-stage-meta">De quem é a vez: Bot</div><div class="pipe-stage-sla">VOCÊ FAZ<b>Aguarda o lead qualificado cair pra você.</b></div></div></div>
+
+        <div class="pipe-stage"><div class="pipe-stage-h"><div class="pipe-stage-num">Etapa 03</div><div class="pipe-stage-name">Lead novo</div></div><div class="pipe-stage-body"><div class="pipe-stage-desc">Interesse confirmado e lead distribuído pro corretor. O cronômetro começa.</div><div class="pipe-stage-meta">De quem é a vez: Você</div><div class="pipe-stage-sla">VOCÊ FAZ<b>Responder em até 5 min. Velocidade é tudo.</b></div></div></div>
+
+        <div class="pipe-stage"><div class="pipe-stage-h"><div class="pipe-stage-num">Etapa 04</div><div class="pipe-stage-name">Follow-up</div></div><div class="pipe-stage-body"><div class="pipe-stage-desc">Você mandou o 1º contato, mas o lead ainda não engajou. A régua roda sozinha.</div><div class="pipe-stage-meta">De quem é a vez: Você + automação</div><div class="pipe-stage-sla">VOCÊ FAZ<b>Deixar a régua trabalhar e assumir quando ele responder.</b></div></div></div>
+
+        <div class="pipe-stage"><div class="pipe-stage-h"><div class="pipe-stage-num">Etapa 05</div><div class="pipe-stage-name">Em atendimento</div></div><div class="pipe-stage-body"><div class="pipe-stage-desc">Conversa ativa. Lead respondendo, você apresentando o imóvel.</div><div class="pipe-stage-meta">De quem é a vez: Você</div><div class="pipe-stage-sla">VOCÊ FAZ<b>Entender a necessidade, enviar material, puxar pra visita.</b></div></div></div>
+
+        <div class="pipe-stage"><div class="pipe-stage-h"><div class="pipe-stage-num">Etapa 06</div><div class="pipe-stage-name">Lead qualificado</div></div><div class="pipe-stage-body"><div class="pipe-stage-desc">Tem perfil, condição de compra e interesse real. É um lead de verdade.</div><div class="pipe-stage-meta">De quem é a vez: Você</div><div class="pipe-stage-sla">VOCÊ FAZ<b>Priorizar. Mover rápido pra reunião ou visita.</b></div></div></div>
+
+        <div class="pipe-stage"><div class="pipe-stage-h"><div class="pipe-stage-num">Etapa 07</div><div class="pipe-stage-name">Reunião / Visita</div></div><div class="pipe-stage-body"><div class="pipe-stage-desc">Visita ao stand, à obra ou reunião agendada e realizada.</div><div class="pipe-stage-meta">De quem é a vez: Você</div><div class="pipe-stage-sla">VOCÊ FAZ<b>Confirmar 24h antes. Remarcar no-show uma vez.</b></div></div></div>
+
+        <div class="pipe-stage"><div class="pipe-stage-h"><div class="pipe-stage-num">Etapa 08</div><div class="pipe-stage-name">Proposta enviada</div></div><div class="pipe-stage-body"><div class="pipe-stage-desc">Tabela e condição formalizadas. Negociação em curso.</div><div class="pipe-stage-meta">De quem é a vez: Você</div><div class="pipe-stage-sla">VOCÊ FAZ<b>Follow-up em +24h e +72h. Não deixar esfriar.</b></div></div></div>
+
+        <div class="pipe-stage"><div class="pipe-stage-h"><div class="pipe-stage-num">Etapa 09</div><div class="pipe-stage-name">Nutrição</div></div><div class="pipe-stage-body"><div class="pipe-stage-desc">Não fechou agora, mas é um lead quente. Entra em fluxo de reativação.</div><div class="pipe-stage-meta">De quem é a vez: Automação</div><div class="pipe-stage-sla">VOCÊ FAZ<b>Marcar o motivo. Deixar a nutrição reaquecer.</b></div></div></div>
+
+        <div class="pipe-stage win"><div class="pipe-stage-h"><div class="pipe-stage-num">Etapa 10</div><div class="pipe-stage-name">Venda fechada</div></div><div class="pipe-stage-body"><div class="pipe-stage-desc">Contrato assinado. Hora de pedir indicação e cuidar do pós-venda.</div><div class="pipe-stage-meta">De quem é a vez: Comemora</div><div class="pipe-stage-sla">VOCÊ FAZ<b>Registrar a venda e a origem (campanha).</b></div></div></div>
+
+        <div class="pipe-stage lose"><div class="pipe-stage-h"><div class="pipe-stage-num">Desfecho</div><div class="pipe-stage-name">Perdido</div></div><div class="pipe-stage-body"><div class="pipe-stage-desc">Sem fit ou desistiu. O motivo registrado vira combustível pra otimizar o tráfego.</div><div class="pipe-stage-meta">De quem é a vez: Reativação</div><div class="pipe-stage-sla">VOCÊ FAZ<b>SEMPRE marcar o motivo da perda.</b></div></div></div>
+
+      </div>
+    </div>
+
+    <div class="insight win reveal" style="margin-top:32px;max-width:none">
+      <strong>A regra de ouro do funil</strong>
+      Um lead nunca fica parado sem dono. Se ele não está avançando, ou é a sua vez de agir, ou ele está num fluxo automático.
+      Mover o lead pela etapa certa não é burocracia: é o que faz o sistema saber quando te cobrar, quando disparar o follow-up e quando reativar.
+      Funil desatualizado é venda perdida que ninguém vê.
+    </div>
+  </div>
+</section>
+
+<!-- ════════ ETAPA iii · PRÉ-ATENDIMENTO ════════ -->
+<section id="pre-atendimento" class="warm">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-marker"><span class="roman">iii</span> · Pré-atendimento · O bot</div>
+      <h2 class="section-title">O bot não vende.<br/>Ele <em>entrega o lead pronto.</em></h2>
+      <p class="lede" style="margin-top:24px">
+        Roda 24 horas por dia. Objetivo único: <b style="color:var(--text)">confirmar o interesse e capturar o WhatsApp</b>
+        pra continuar a conversa fora da janela de 24h do Instagram. Cada resposta etiqueta o lead automaticamente no Kommo, antes de chegar em você.
+      </p>
+    </div>
+
+    <div class="grid-12 reveal">
+
+      <div class="g-8 card" style="padding:36px 32px">
+        <div class="card-eyebrow">Fluxo · passo a passo</div>
+        <div class="bot-flow">
+
+          <div class="bot-step">
+            <div class="bot-step-num">01</div>
+            <div class="bot-step-content">
+              <div class="bot-step-title">Lead chega do anúncio</div>
+              <div class="bot-step-meta">Gatilho: nova mensagem no Direct do Instagram, comentário no anúncio ou cadastro no formulário, tudo conectado ao Kommo.</div>
+            </div>
+          </div>
+
+          <div class="bot-step">
+            <div class="bot-step-num copper">02</div>
+            <div class="bot-step-content">
+              <div class="bot-step-title">Saudação e confirmação de interesse</div>
+              <div class="bot-msg">
+                <span class="from">Mensagem do bot</span>
+                "Olá, tudo bem? Aqui é da <b>[Imobiliária]</b>. Recebemos seu cadastro e queremos entender melhor o que você busca. Você confirma seu interesse?"
+              </div>
+              <div class="bot-branches">
+                <span class="bdg bdg-green">Sim → segue p/ qualificação</span>
+                <span class="bdg bdg-soft">Não me cadastrei → descartado</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bot-step">
+            <div class="bot-step-num copper">03</div>
+            <div class="bot-step-content">
+              <div class="bot-step-title">Pergunta de qualificação</div>
+              <div class="bot-msg">"Perfeito! Pra eu te ajudar do jeito certo: você procura pra <b>morar</b>, pra <b>investir</b> ou pra <b>segunda casa / praia</b>?"</div>
+              <div class="bot-branches">
+                <span class="bdg bdg-bege">Morar → perfil:morador</span>
+                <span class="bdg bdg-bege">Investir → perfil:investidor</span>
+                <span class="bdg bdg-bege">2ª casa → perfil:lazer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bot-step">
+            <div class="bot-step-num accent">04</div>
+            <div class="bot-step-content">
+              <div class="bot-step-title">Captura do WhatsApp <span class="bdg bdg-orange" style="margin-left:8px;font-size:10px;vertical-align:middle">crítico</span></div>
+              <div class="bot-msg">
+                "Pra eu te mandar o material completo com plantas e valores, qual o seu WhatsApp?<br/>
+                <span style="color:var(--muted);font-size:13px">Aqui no Instagram só consigo te responder por 24h. Pelo WhatsApp te dou atenção sempre que precisar.</span>"
+              </div>
+              <div class="bot-branches">
+                <span class="bdg bdg-green">Mandou → Pré-qualificado</span>
+                <span class="bdg bdg-red">Recusou → tag só_instagram</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bot-step">
+            <div class="bot-step-num accent">05</div>
+            <div class="bot-step-content">
+              <div class="bot-step-title">Handoff pro corretor</div>
+              <div class="bot-msg">
+                <span class="from">Mensagem final do bot</span>
+                "Perfeito, já registrei aqui. Em alguns minutos um corretor vai te chamar no WhatsApp com os detalhes. Até já."
+              </div>
+              <div class="bot-step-meta" style="margin-top:8px">
+                → Notifica o corretor no Kommo · lead vai pra coluna "Lead novo" · começa a contar o SLA de 5 min.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="g-4" style="display:flex;flex-direction:column;gap:16px">
+
+        <div class="card">
+          <div class="card-eyebrow">Por que isso te ajuda</div>
+          <ul class="dash-list accent">
+            <li>Você não perde tempo com curioso: só recebe quem confirmou interesse.</li>
+            <li>O lead já chega <b style="color:var(--text)">etiquetado</b> (morar/investir/lazer), então você sabe como abordar.</li>
+            <li>O WhatsApp já vem capturado, sem ficar pedindo número.</li>
+            <li>O bot responde na hora, mesmo de madrugada ou fim de semana.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-eyebrow">Se o lead some no Direct · janela 24h</div>
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <div style="display:flex;gap:14px;align-items:flex-start">
+              <span style="font-family:var(--serif);font-style:italic;font-size:17px;color:var(--accent);width:48px;flex-shrink:0">+1h</span>
+              <span style="font-size:13px;line-height:1.55;color:var(--text-soft)">"Vi que você não respondeu, deve estar ocupado. Se preferir, me chama no WhatsApp."</span>
+            </div>
+            <div style="display:flex;gap:14px;align-items:flex-start">
+              <span style="font-family:var(--serif);font-style:italic;font-size:17px;color:var(--accent);width:48px;flex-shrink:0">+6h</span>
+              <span style="font-size:13px;line-height:1.55;color:var(--text-soft)">"Separei o material do empreendimento pra você. Quer que eu te envie?"</span>
+            </div>
+            <div style="display:flex;gap:14px;align-items:flex-start">
+              <span style="font-family:var(--serif);font-style:italic;font-size:17px;color:var(--accent);width:48px;flex-shrink:0">+23h</span>
+              <span style="font-size:13px;line-height:1.55;color:var(--text-soft)">"Vou sair do Instagram em algumas horas. Me passa seu WhatsApp pra continuarmos por lá?"</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════ ETAPA iv · FOLLOW-UP ════════ -->
+<section id="follow-up">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-marker"><span class="roman">iv</span> · Follow-up · A régua</div>
+      <h2 class="section-title">Trinta dias de insistência,<br/><em>sem você lembrar.</em></h2>
+      <p class="lede" style="margin-top:24px">
+        Lead que chega pra você entra numa régua automática de follow-up. Cada toque tem mensagem-tipo,
+        objetivo e gatilho de saída. A régua para sozinha quando o lead responde, e quem não engaja até D+30 vai pra nutrição.
+      </p>
+    </div>
+
+    <div class="card reveal" style="padding:40px 32px">
+      <div class="fu-rail">
+        <div class="fu-line"></div>
+        <div class="fu-grid">
+
+          <div class="fu-step">
+            <div class="fu-day">Dia 0 · na hora</div>
+            <div class="fu-orb d0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div class="fu-title">Apresentação</div>
+            <div class="fu-card">
+              "Oi {nome}, sou {corretor}. Recebi seu interesse no {empreendimento}. Já te envio o material completo com plantas e valores."
+              <span class="fu-obj">Em até 5 min · material + vídeo</span>
+            </div>
+          </div>
+
+          <div class="fu-step">
+            <div class="fu-day">Dias 1, 3 e 7</div>
+            <div class="fu-orb d7">7</div>
+            <div class="fu-title">Reforço e prova</div>
+            <div class="fu-card">
+              Toques curtos: "Conseguiu ver o material?", vídeo da obra na semana, condição que abriu. Cada um com um motivo novo pra responder.
+              <span class="fu-obj">Prova social + CTA visita</span>
+            </div>
+          </div>
+
+          <div class="fu-step">
+            <div class="fu-day">Dia 30</div>
+            <div class="fu-orb d30">30</div>
+            <div class="fu-title">Última tentativa</div>
+            <div class="fu-card">
+              "{nome}, vou te tirar da minha lista ativa pra não te incomodar. Se mudar de ideia, é só me chamar."
+              <span class="fu-obj">Loss aversion · vai pra nutrição</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="exc-grid">
+        <div class="exc-card ok">
+          <div class="exc-card-h"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Régua de SIM</div>
+          Lead respondeu e demonstrou interesse? <b>Sai da régua automática.</b> Você assume a condução manual e parte pra visita.
+        </div>
+        <div class="exc-card warn">
+          <div class="exc-card-h"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Régua de PAUSA</div>
+          Lead pediu pra ser contatado depois? <b>Tarefa agendada</b> no Kommo pra data combinada. A régua fica suspensa até lá.
+        </div>
+        <div class="exc-card bad">
+          <div class="exc-card-h"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Régua de SAÍDA</div>
+          Lead bloqueou ou disse "não tenho interesse"? <b>Tag não_contatar.</b> Sai de todas as réguas e disparos na hora.
+        </div>
+      </div>
+    </div>
+
+    <div class="insight note reveal" style="margin-top:32px;max-width:none">
+      <strong>O segredo está nos 5 minutos</strong>
+      Esse é o dado que mais move resultado na operação inteira. Lead que espera mais de 5 minutos pela primeira resposta humana
+      cai de forma desproporcional em conversão, o mercado mostra queda de 30% a 50% na qualificação quando o primeiro contato passa de 10 minutos.
+      A régua existe pra te lembrar, mas o primeiro toque rápido é seu.
+    </div>
+  </div>
+</section>
+
+<!-- ════════ ETAPA v · NUTRIÇÃO ════════ -->
+<section id="nutricao" class="warm">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-marker"><span class="roman">v</span> · Nutrição &amp; Reativação</div>
+      <h2 class="section-title">Lead frio não é<br/>lead <em>perdido.</em></h2>
+      <p class="lede" style="margin-top:24px">
+        Comprar imóvel é decisão de meses. Quem não fechou agora pode fechar depois, por isso o lead que esfriou
+        não some: entra num fluxo de nutrição que <b style="color:var(--text)">reaquece com conteúdo de valor</b> e tenta trazê-lo de volta pra uma visita.
+      </p>
+    </div>
+
+    <div class="grid-12 reveal">
+
+      <div class="g-8 card" style="padding:36px 32px">
+        <div class="card-eyebrow">Exemplo · fluxo de nutrição por localização</div>
+        <div class="bot-flow">
+
+          <div class="bot-step">
+            <div class="bot-step-num copper">01</div>
+            <div class="bot-step-content">
+              <div class="bot-step-title">Reabre a conversa com valor</div>
+              <div class="bot-msg">
+                "Olá, {nome}! Sei que a localização é decisiva na hora de escolher um novo lar. Por isso queria te lembrar que o <b>{empreendimento}</b> está em uma das áreas mais valorizadas da região."
+              </div>
+            </div>
+          </div>
+
+          <div class="bot-step">
+            <div class="bot-step-num copper">02</div>
+            <div class="bot-step-content">
+              <div class="bot-step-title">Entrega benefícios concretos</div>
+              <div class="bot-msg">
+                "Você está a poucos minutos de shopping, supermercado, escolas e do acesso principal. Tranquilidade e verde, sem abrir mão de praticidade.<br/>
+                <span style="color:var(--muted);font-size:13px">Lotes de 250m² a 406m², a partir de R$ 377 mil. (valores ilustrativos)</span>"
+              </div>
+            </div>
+          </div>
+
+          <div class="bot-step">
+            <div class="bot-step-num accent">03</div>
+            <div class="bot-step-content">
+              <div class="bot-step-title">Convida pra um próximo passo</div>
+              <div class="bot-msg">
+                "Gostaria de agendar uma visita pra conhecer a localização e o posicionamento dos lotes?<br/>
+                <b>1.</b> Sim, quero agendar! &nbsp; <b>2.</b> Não tenho interesse."
+              </div>
+              <div class="bot-branches">
+                <span class="bdg bdg-green">1 → handoff pro corretor</span>
+                <span class="bdg bdg-soft">2 → porta aberta</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bot-step">
+            <div class="bot-step-num accent">04</div>
+            <div class="bot-step-content">
+              <div class="bot-step-title">Dois caminhos, nenhum beco sem saída</div>
+              <div class="bot-msg">
+                <b>Se SIM:</b> "Ótimo, {nome}! Vou te direcionar pra um corretor que conhece a área como ninguém. Ele já te chama." → lead volta pro funil, tag <b>reativado</b>.<br/><br/>
+                <b>Se NÃO:</b> "Entendido. Se mudar de ideia ou quiser tirar uma dúvida rápida, estamos por aqui, sem compromisso." → segue na base pra um próximo disparo.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="g-4" style="display:flex;flex-direction:column;gap:16px">
+
+        <div class="card">
+          <div class="card-eyebrow">Quem entra na nutrição</div>
+          <ul class="dash-list accent">
+            <li>Lead que não engajou até D+30 no follow-up.</li>
+            <li>Lead que pediu "me chama mais pra frente".</li>
+            <li>Lead que visitou mas não fechou.</li>
+            <li>Base antiga que esfriou (reativação por disparo).</li>
+          </ul>
+        </div>
+
+        <div class="insight copper" style="border-radius:var(--r)">
+          <strong>Disparo de reativação</strong>
+          De tempos em tempos, a base fria recebe um disparo em massa, uma novidade do empreendimento, uma condição nova, um lembrete de localização.
+          Quem responde reentra no funil quente, com a tag <b style="color:var(--text)">reativado</b>, e cai pra um corretor.
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════ GLOSSÁRIO ════════ -->
+<section id="glossario">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow muted">Vocabulário</div>
+      <h2 class="section-title">Glossário <em>sem enrolação.</em></h2>
+      <p class="lede" style="margin-top:24px">
+        Os termos que aparecem no dia a dia da operação, explicados em uma frase. Sem jargão pelo jargão.
+      </p>
+    </div>
+
+    <div class="gloss-grid reveal">
+
+      <div class="gloss-item"><div class="gloss-term">Lead</div><div class="gloss-def">Qualquer pessoa que demonstrou interesse (mandou DM, comentou, preencheu formulário). Ainda não é cliente, é uma <b>oportunidade</b>.</div></div>
+
+      <div class="gloss-item"><div class="gloss-term">Lead qualificado</div><div class="gloss-def">Lead que tem <b>perfil, condição de compra e interesse real</b>. Vale o seu tempo. O oposto do curioso que só queria o preço.</div></div>
+
+      <div class="gloss-item"><div class="gloss-term">Topo, meio e fundo de funil</div><div class="gloss-def"><b>Topo:</b> acabou de descobrir. <b>Meio:</b> está considerando. <b>Fundo:</b> pronto pra decidir. Quanto mais fundo, mais quente.</div></div>
+
+      <div class="gloss-item"><div class="gloss-term">CPL · Custo por Lead</div><div class="gloss-def">Quanto se gastou em anúncio pra gerar <b>um lead</b>. CPL baixo demais às vezes traz lead ruim; o que importa é o custo por <b>venda</b>.</div></div>
+
+      <div class="gloss-item"><div class="gloss-term">Pré-atendimento</div><div class="gloss-def">A primeira triagem, feita pelo bot: confirma interesse e capta o WhatsApp <b>antes</b> do lead chegar no corretor.</div></div>
+
+      <div class="gloss-item"><div class="gloss-term">Salesbot</div><div class="gloss-def">O robô de conversa que roda 24/7 no Direct e no WhatsApp. Faz perguntas, etiqueta o lead e passa o bastão pro humano.</div></div>
+
+      <div class="gloss-item"><div class="gloss-term">SDR</div><div class="gloss-def">Quando existe, é a pessoa que qualifica o lead por mensagem antes de passar pro corretor. Em muitas operações, o próprio bot + corretor fazem esse papel.</div></div>
+
+      <div class="gloss-item"><div class="gloss-term">Follow-up</div><div class="gloss-def">A sequência de toques pra cobrar retorno de quem não respondeu. Pode ser manual, mas aqui roda em <b>régua automática</b>.</div></div>
+
+      <div class="gloss-item"><div class="gloss-term">Nutrição</div><div class="gloss-def">Manter o lead frio aquecido com conteúdo de valor até ele estar pronto pra avançar. Não é spam: é lembrar com motivo.</div></div>
+
+      <div class="gloss-item"><div class="gloss-term">Reativação</div><div class="gloss-def">Trazer de volta lead antigo que esfriou, normalmente por um <b>disparo</b> com uma novidade ou condição nova.</div></div>
+
+      <div class="gloss-item"><div class="gloss-term">Pipeline</div><div class="gloss-def">O conjunto de etapas (colunas) do funil dentro do Kommo. Mover o lead pela coluna certa é o que mantém o sistema vivo.</div></div>
+
+      <div class="gloss-item"><div class="gloss-term">SLA</div><div class="gloss-def">O tempo máximo combinado pra uma ação. O mais importante: <b>responder o lead novo em até 5 minutos.</b></div></div>
+
+      <div class="gloss-item"><div class="gloss-term">Tag</div><div class="gloss-def">Etiqueta colada no lead (ex: investidor, reativado, não_contatar). É como o sistema sabe o que fazer com cada um.</div></div>
+
+      <div class="gloss-item"><div class="gloss-term">Janela de 24h</div><div class="gloss-def">No Instagram e no WhatsApp só dá pra responder por iniciativa própria dentro de 24h. Por isso o bot capta o número logo no começo.</div></div>
+
+      <div class="gloss-item"><div class="gloss-term">Handoff</div><div class="gloss-def">A passagem de bastão, do bot pro corretor, ou de um corretor pra outro. Sempre com o histórico junto, no Kommo.</div></div>
+
+      <div class="gloss-item"><div class="gloss-term">Disparo</div><div class="gloss-def">Mensagem enviada em massa pra uma base de leads (geralmente reativação). Diferente do follow-up, que é um a um.</div></div>
+
+      <div class="gloss-item"><div class="gloss-term">Distribuição (roleta)</div><div class="gloss-def">A regra que decide qual corretor recebe cada lead novo, automaticamente e de forma justa, sem briga por lead.</div></div>
+
+      <div class="gloss-item"><div class="gloss-term">Motivo de perda</div><div class="gloss-def">O porquê do lead não ter fechado (preço, região, timing...). Registrar isso é o que <b>melhora o anúncio</b> da próxima vez.</div></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════ FAQ ════════ -->
+<section id="faq" class="dark">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Dúvidas comuns</div>
+      <h2 class="section-title">O que todo corretor<br/><em>pergunta.</em></h2>
+      <p class="lede" style="margin-top:24px">
+        As perguntas que mais aparecem quando a operação começa a rodar. Se a sua não estiver aqui, fala com a Trilha.
+      </p>
+    </div>
+
+    <div class="acc-list reveal" style="max-width:920px">
+
+      <details class="acc-item">
+        <summary>
+          <div class="acc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="9" width="20" height="13" rx="2"/><circle cx="12" cy="4" r="2"/><line x1="12" y1="6" x2="12" y2="9"/></svg></div>
+          <div class="acc-text">
+            <h3>O bot rouba o meu lead?</h3>
+            <small>Spoiler: não. Ele trabalha pra você.</small>
+          </div>
+          <svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="acc-body">
+          O bot só faz o <b>pré-atendimento</b>: confirma interesse e capta o WhatsApp. Quem conversa, apresenta e fecha é você.
+          Ele te entrega o lead já aquecido e etiquetado, pra você não gastar energia com quem nem queria informação.
+        </div>
+      </details>
+
+      <details class="acc-item">
+        <summary>
+          <div class="acc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div class="acc-text">
+            <h3>Por que o lead demora pra chegar pra mim?</h3>
+            <small>São segundos a poucos minutos, e tem motivo</small>
+          </div>
+          <svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="acc-body">
+          Antes de chegar em você, o lead passa pelo pré-atendimento. Isso <b>filtra o curioso</b> e garante que você recebe um contato com WhatsApp válido e interesse confirmado.
+          É a diferença entre receber 100 prints de DM e receber 30 leads de verdade.
+        </div>
+      </details>
+
+      <details class="acc-item">
+        <summary>
+          <div class="acc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+          <div class="acc-text">
+            <h3>Preciso responder em 5 minutos mesmo?</h3>
+            <small>É o número que mais muda o seu resultado</small>
+          </div>
+          <svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="acc-body">
+          Sim. Lead que espera mais de 5 minutos cai muito em conversão, o mercado mostra queda de 30% a 50% na qualificação quando o
+          primeiro contato passa de 10 minutos. O lead acabou de mandar mensagem, ele está com o celular na mão <b>agora</b>. Daqui a uma hora ele já falou com três concorrentes.
+        </div>
+      </details>
+
+      <details class="acc-item">
+        <summary>
+          <div class="acc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><polyline points="21 3 21 8 16 8"/></svg></div>
+          <div class="acc-text">
+            <h3>O que acontece com o lead que não responde?</h3>
+            <small>Ele não some, fica vivo</small>
+          </div>
+          <svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="acc-body">
+          A régua de follow-up tenta de novo (D+1, D+3, D+7...). Se não engajar até D+30, ele vai pra <b>nutrição</b> e depois pode voltar num disparo de reativação.
+          Imóvel é decisão de meses: muito lead que ignora hoje fecha daqui a 90 dias.
+        </div>
+      </details>
+
+      <details class="acc-item">
+        <summary>
+          <div class="acc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+          <div class="acc-text">
+            <h3>Por que tenho que marcar o motivo de perda?</h3>
+            <small>É o que melhora o seu próximo lead</small>
+          </div>
+          <svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="acc-body">
+          Porque alimenta a otimização do tráfego. Sem o motivo, ninguém sabe se o problema foi <b>preço, região ou timing</b>, e a verba segue indo pro público errado.
+          Marcar o motivo é o que faz o próximo lote de leads chegar melhor. Leva 5 segundos e melhora o resultado de todo mundo.
+        </div>
+      </details>
+
+      <details class="acc-item">
+        <summary>
+          <div class="acc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div class="acc-text">
+            <h3>Por que a conversa sai do Instagram pro WhatsApp?</h3>
+            <small>É uma limitação da plataforma, não capricho</small>
+          </div>
+          <svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="acc-body">
+          No Instagram, você só pode responder o lead dentro de uma <b>janela de 24h</b>. Passou disso, não dá pra puxar a conversa de volta.
+          No WhatsApp você fala com ele quando precisar. Por isso o bot capta o número logo no começo, pra não perder o contato.
+        </div>
+      </details>
+
+      <details class="acc-item">
+        <summary>
+          <div class="acc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
+          <div class="acc-text">
+            <h3>Preciso desativar a régua quando o lead responde?</h3>
+            <small>Não. Ela se cuida sozinha</small>
+          </div>
+          <svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="acc-body">
+          A régua para automaticamente quando o lead responde ou quando você move ele de etapa no Kommo. Você não precisa desligar nada,
+          só <b>conduzir a conversa</b> quando ele engajar. Manter o lead na etapa certa é o que avisa o sistema pra parar de cobrar.
+        </div>
+      </details>
+
+      <details class="acc-item">
+        <summary>
+          <div class="acc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg></div>
+          <div class="acc-text">
+            <h3>Por que eu tenho que mexer no Kommo o tempo todo?</h3>
+            <small>Porque o funil só funciona se estiver atualizado</small>
+          </div>
+          <svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="acc-body">
+          O Kommo é o cérebro da operação. É lá que o sistema sabe quando disparar o follow-up, quando te cobrar e quando reativar.
+          Lead na coluna errada é follow-up que não dispara e venda que ninguém vê escapar. <b>Mover o lead pela etapa certa leva segundos e protege a sua comissão.</b>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════ FOOTER ════════ -->
+<footer class="foot">
+  <div class="container">
+    <div class="foot-mark">
+      <div class="foot-mark-icon"><img src="https://static.wixstatic.com/media/9e0e31_d413da8154a84961a8c3ead79baf3c3e~mv2.png/v1/fill/w_192,h_192,lg_1,usm_0.66_1.00_0.01/9e0e31_d413da8154a84961a8c3ead79baf3c3e~mv2.png" alt="Trilha · símbolo"/></div>
+      <div class="foot-mark-text">
+        Trilha Performance Digital
+        <small>Guia do Funil &amp; Fluxos · Operação imobiliária</small>
+      </div>
+    </div>
+    <p class="foot-meta">Material de apoio ao corretor e à construtora · <b>Atualizado em maio de 2026</b></p>
+  </div>
+</footer>
+
+<script>
+// Reveal on scroll
+const io=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}
+  });
+},{threshold:.15,rootMargin:'0px 0px -60px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// Mini-funnel active state
+const sections=document.querySelectorAll('section[id]');
+const mfLinks=document.querySelectorAll('.mini-funnel a');
+const sio=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      const id=e.target.id;
+      mfLinks.forEach(a=>a.classList.toggle('active',a.dataset.target===id));
+    }
+  });
+},{threshold:.3});
+sections.forEach(s=>sio.observe(s));
+</script>
+</body>
+</html>
