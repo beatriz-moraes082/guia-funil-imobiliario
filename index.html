@@ -525,7 +525,7 @@ details[open] .acc-chev{transform:rotate(180deg);color:var(--accent)}
 .acc-body b{color:var(--text);font-weight:600}
 
 /* ───── PIPELINE STAGES ───── */
-.pipeline-grid{display:grid;grid-template-columns:repeat(7,minmax(180px,1fr));gap:12px;overflow-x:auto;padding:8px 4px 28px;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--bege-dark) transparent}
+.pipeline-grid{display:grid;grid-template-columns:repeat(9,minmax(180px,1fr));gap:12px;overflow-x:auto;padding:8px 4px 28px;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--bege-dark) transparent}
 .pipe-stage{background:var(--surface);border:1px solid var(--border-soft);border-radius:var(--r-sm);overflow:hidden;scroll-snap-align:start;display:flex;flex-direction:column;transition:all .3s;min-height:200px}
 .pipe-stage:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--border-strong)}
 .pipe-stage-h{padding:16px 16px 12px;border-bottom:1px solid var(--border-soft)}
@@ -602,7 +602,7 @@ details[open] .acc-chev{transform:rotate(180deg);color:var(--accent)}
 <div class="mini-funnel" id="miniFunnel">
   <a href="#metodo" data-target="metodo" data-name="i · O Método"></a>
   <a href="#jornada" data-target="jornada" data-name="ii · A Jornada"></a>
-  <a href="#funil" data-target="funil" data-name="iii · As 6 Etapas"></a>
+  <a href="#funil" data-target="funil" data-name="iii · As 8 Etapas"></a>
 </div>
 
 <!-- ════════ HERO · FUNIL INVERTIDO ════════ -->
@@ -642,11 +642,11 @@ details[open] .acc-chev{transform:rotate(180deg);color:var(--accent)}
       <a href="#funil" class="funnel-row f3">
         <div class="f-left"><div class="f-roman">iii</div></div>
         <div class="f-center">
-          <div class="f-name">As 6 Etapas</div>
+          <div class="f-name">As 8 Etapas</div>
           <div class="f-sub">O que significa cada etapa do funil</div>
         </div>
         <div class="f-right">
-          <div class="f-stat">Etapas<b>6</b></div>
+          <div class="f-stat">Etapas<b>8</b></div>
           <div class="f-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
         </div>
       </a>
@@ -656,7 +656,7 @@ details[open] .acc-chev{transform:rotate(180deg);color:var(--accent)}
     <div class="hero-meta">
       <div class="hero-meta-item">
         <small>Funil padrão</small>
-        <div class="v"><em>6</em> etapas</div>
+        <div class="v"><em>8</em> etapas</div>
         <p>Da primeira mensagem até a venda</p>
       </div>
       <div class="hero-meta-item">
@@ -936,11 +936,11 @@ details[open] .acc-chev{transform:rotate(180deg);color:var(--accent)}
 <section id="funil">
   <div class="container">
     <div class="section-head reveal" style="max-width:1180px">
-      <div class="section-marker"><span class="roman">ii</span> · O Funil · 6 etapas</div>
+      <div class="section-marker"><span class="roman">ii</span> · O Funil · 8 etapas</div>
       <h2 class="section-title">Toda etapa tem um dono<br/>e um <em>próximo passo.</em></h2>
       <p class="lede" style="margin-top:24px">
         No Kommo, o lead caminha por colunas. Cada coluna diz três coisas: <b style="color:var(--text)">o que significa</b>, <b style="color:var(--text)">de quem é a vez</b>
-        e <b style="color:var(--text)">o que você (corretor) faz</b>. Arraste pra ver as 6 etapas e o desfecho.
+        e <b style="color:var(--text)">o que você (corretor) faz</b>. Arraste pra ver as 8 etapas e o desfecho.
       </p>
     </div>
 
@@ -957,7 +957,11 @@ details[open] .acc-chev{transform:rotate(180deg);color:var(--accent)}
 
         <div class="pipe-stage"><div class="pipe-stage-h"><div class="pipe-stage-num">Etapa 05</div><div class="pipe-stage-name">Lead qualificado</div></div><div class="pipe-stage-body"><div class="pipe-stage-desc">Tem perfil, condição de compra e interesse real. É um lead de verdade.</div><div class="pipe-stage-meta">De quem é a vez: Você</div><div class="pipe-stage-sla">VOCÊ FAZ<b>Priorizar. Mover rápido pra reunião ou visita.</b></div></div></div>
 
-        <div class="pipe-stage win"><div class="pipe-stage-h"><div class="pipe-stage-num">Etapa 06</div><div class="pipe-stage-name">Venda fechada</div></div><div class="pipe-stage-body"><div class="pipe-stage-desc">Contrato assinado. Hora de pedir indicação e cuidar do pós-venda.</div><div class="pipe-stage-meta">De quem é a vez: Comemora</div><div class="pipe-stage-sla">VOCÊ FAZ<b>Registrar a venda e a origem (campanha).</b></div></div></div>
+        <div class="pipe-stage"><div class="pipe-stage-h"><div class="pipe-stage-num">Etapa 06</div><div class="pipe-stage-name">Reunião / Visita</div></div><div class="pipe-stage-body"><div class="pipe-stage-desc">Visita ao stand, à obra ou reunião agendada e realizada.</div><div class="pipe-stage-meta">De quem é a vez: Você</div><div class="pipe-stage-sla">VOCÊ FAZ<b>Confirmar 24h antes. Remarcar no-show uma vez.</b></div></div></div>
+
+        <div class="pipe-stage"><div class="pipe-stage-h"><div class="pipe-stage-num">Etapa 07</div><div class="pipe-stage-name">Proposta enviada</div></div><div class="pipe-stage-body"><div class="pipe-stage-desc">Tabela e condição formalizadas. Negociação em curso.</div><div class="pipe-stage-meta">De quem é a vez: Você</div><div class="pipe-stage-sla">VOCÊ FAZ<b>Follow-up em +24h e +72h. Não deixar esfriar.</b></div></div></div>
+
+        <div class="pipe-stage win"><div class="pipe-stage-h"><div class="pipe-stage-num">Etapa 08</div><div class="pipe-stage-name">Venda fechada</div></div><div class="pipe-stage-body"><div class="pipe-stage-desc">Contrato assinado. Hora de pedir indicação e cuidar do pós-venda.</div><div class="pipe-stage-meta">De quem é a vez: Comemora</div><div class="pipe-stage-sla">VOCÊ FAZ<b>Registrar a venda e a origem (campanha).</b></div></div></div>
 
         <div class="pipe-stage lose"><div class="pipe-stage-h"><div class="pipe-stage-num">Desfecho</div><div class="pipe-stage-name">Perdido</div></div><div class="pipe-stage-body"><div class="pipe-stage-desc">Sem fit ou desistiu. O motivo registrado vira combustível pra otimizar o tráfego.</div><div class="pipe-stage-meta">De quem é a vez: Reativação</div><div class="pipe-stage-sla">VOCÊ FAZ<b>SEMPRE marcar o motivo da perda.</b></div></div></div>
 
